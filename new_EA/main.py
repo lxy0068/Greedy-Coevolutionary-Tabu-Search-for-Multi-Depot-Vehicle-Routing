@@ -39,21 +39,16 @@ def main(file_name, algorithm, iterations, population_size, phenotype_coding, nu
         result, fitness = alg.run()
         runtime = time.time() - start_time
 
-        # Debugging output for fitness format
         print(f"Trial {trial + 1}: Type of fitness - {type(fitness)}")
 
-        # Ensure fitness is handled appropriately
         try:
             if isinstance(fitness, list) and len(fitness) > 0:
-                # Assuming a list of fitness values
                 all_fitness_values.append(fitness[-1].value)
                 all_stability_data.append([f.value for f in fitness])
             elif hasattr(fitness, 'value'):
-                # Assuming fitness is a single object with a 'value' attribute
                 all_fitness_values.append(fitness.value)
                 all_stability_data.append([fitness.value])
             elif isinstance(fitness, (int, float)):
-                # Assuming fitness is directly a scalar
                 all_fitness_values.append(fitness)
                 all_stability_data.append([fitness])
             else:
@@ -64,7 +59,6 @@ def main(file_name, algorithm, iterations, population_size, phenotype_coding, nu
 
         all_runtimes.append(runtime)
 
-        # Print the best instance from the fitness list if possible
         try:
             best_instance = evaluation.Evaluation.find_overall_best_instance(fitness)
             print_result(best_instance)
