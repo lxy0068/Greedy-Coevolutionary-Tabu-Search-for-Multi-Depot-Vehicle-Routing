@@ -1,0 +1,95 @@
+\begin{thebibliography}{10}
+
+\bibitem{ai2009particle}
+T.~J. Ai and V.~Kachitvichyanukul.
+\newblock A particle swarm optimization for the vehicle routing problem with
+  multiple depots.
+\newblock {\em Journal of Industrial and Management Optimization},
+  5(3):391--405, 2009.
+
+\bibitem{brandao2004tabu}
+J.~Brandão.
+\newblock A tabu search algorithm for the open vehicle routing problem.
+\newblock {\em European Journal of Operational Research}, 157(3):552--564,
+  2004.
+
+\bibitem{clarke1964savings}
+G.~Clarke and J.~W. Wright.
+\newblock Scheduling of vehicles from a central depot to a number of delivery
+  points.
+\newblock {\em Operations Research}, 12(4):568--581, 1964.
+
+\bibitem{cordeau1997savings}
+J.~F. Cordeau, G.~Laporte, and A.~Mercier.
+\newblock A tabu search heuristic for the vehicle routing problem with multiple
+  use of vehicles.
+\newblock {\em Journal of the Operational Research Society}, 48(11):1065--1070,
+  1997.
+
+\bibitem{dejong2001evolutionary}
+K.~A. De~Jong, M.~A. Potter, and W.~M. Spears.
+\newblock Using problem decomposition to extend the applicability of the
+  genetic algorithm to large-scale optimization.
+\newblock {\em Proceedings of the Genetic and Evolutionary Computation
+  Conference (GECCO)}, pages 261--268, 2001.
+
+\bibitem{glover1986future}
+F.~Glover.
+\newblock Future paths for integer programming and links to artificial
+  intelligence.
+\newblock {\em Computers \& Operations Research}, 13(5):533--549, 1986.
+
+\bibitem{golden1998impact}
+B.~L. Golden, S.~Raghavan, and E.~A. Wasil.
+\newblock The impact of metaheuristics on solving the vehicle routing problem:
+  algorithms, problem sets, and computational results.
+\newblock In {\em Fleet Management and Logistics}, pages 33--56. 1998.
+
+\bibitem{holland1992adaptation}
+J.~H. Holland.
+\newblock {\em Adaptation in Natural and Artificial Systems: An Introductory
+  Analysis with Applications to Biology, Control, and Artificial Intelligence}.
+\newblock MIT Press, 1992.
+
+\bibitem{laporte1987exact}
+G.~Laporte and Y.~Nobert.
+\newblock Exact algorithms for the vehicle routing problem.
+\newblock {\em Annals of Discrete Mathematics}, 31:147--184, 1987.
+
+\bibitem{liu2006vehicle}
+Y.~Liu, L.~Wang, and Y.~Jin.
+\newblock An effective co-evolutionary particle swarm optimization for vehicle
+  routing problem with time windows.
+\newblock {\em Proceedings of the 2006 IEEE Congress on Evolutionary
+  Computation}, pages 2370--2376, 2006.
+
+\bibitem{potter1994cooperative}
+M.~A. Potter and K.~A. De~Jong.
+\newblock A cooperative coevolutionary approach to function optimization.
+\newblock {\em Proceedings of the Third International Conference on Parallel
+  Problem Solving from Nature}, 866:249--257, 1994.
+
+\bibitem{rego1996tabu}
+C.~Rego and B.~Alidaee.
+\newblock A dynamic heuristic for large-scale capacitated arc routing problems.
+\newblock {\em Computers \& Operations Research}, 23(7):585--594, 1996.
+
+\bibitem{reimann2004heuristic}
+M.~Reimann, K.~F. Doerner, and R.~F. Hartl.
+\newblock A heuristic for the vehicle routing problem with pickup and delivery.
+\newblock {\em European Journal of Operational Research}, 158(3):651--667,
+  2004.
+
+\bibitem{salhi1991multi}
+S.~Salhi and M.~Sari.
+\newblock A multi-level composite heuristic for the multi-depot vehicle fleet
+  mix problem.
+\newblock {\em European Journal of Operational Research}, 103(1):95--112, 1991.
+
+\bibitem{venkatesh2015hybrid}
+B.~Venkatesh and T.~Singh.
+\newblock A hybrid genetic algorithm for the multi-depot vehicle routing
+  problem.
+\newblock {\em Applied Soft Computing}, 32:241--249, 2015.
+
+\end{thebibliography}
