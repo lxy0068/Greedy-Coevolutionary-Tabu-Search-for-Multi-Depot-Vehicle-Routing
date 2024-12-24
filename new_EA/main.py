@@ -15,6 +15,12 @@ from graph import Graph, Image
 
 
 def print_result(best_instance):
+    """
+    Print details of the best instance including generation, instance, fitness, and phenotype.
+
+    Args:
+        best_instance (object): The best instance containing its properties.
+    """
     print('Best instance: ')
     print('Generation: ' + str(best_instance.generation))
     print('Instance: ' + str(best_instance.instance))
@@ -23,6 +29,17 @@ def print_result(best_instance):
 
 
 def main(file_name, algorithm, iterations, population_size, phenotype_coding, num_trials=30):
+    """
+    Main function to execute the evolutionary algorithm, record results, and visualize data.
+
+    Args:
+        file_name (str): Name of the dataset file.
+        algorithm (class): The evolutionary algorithm class to use.
+        iterations (int): Total number of iterations for the algorithm.
+        population_size (int): Number of individuals in the population.
+        phenotype_coding (method.Method): Encoding method for the phenotype.
+        num_trials (int, optional): Number of trials to perform. Default is 30.
+    """
     directory.Directory().delete_directories()
     objects = file.File.read('../datasets/' + file_name)
 
@@ -65,6 +82,7 @@ def main(file_name, algorithm, iterations, population_size, phenotype_coding, nu
         except Exception as e:
             print(f"Error finding best instance on trial {trial + 1}: {e}")
 
+    # Calculate and print average statistics.
     average_fitness = np.mean(all_fitness_values) if all_fitness_values else None
     average_runtime = np.mean(all_runtimes) if all_runtimes else None
     if average_fitness is not None:
@@ -77,6 +95,7 @@ def main(file_name, algorithm, iterations, population_size, phenotype_coding, nu
     else:
         print('No runtime data recorded.')
 
+    # Visualize results using Graph.
     algorithm_name = "Evolutionary Algorithm"
     if all_fitness_values:
         Graph.draw_solution_quality(all_fitness_values, algorithm_name)
